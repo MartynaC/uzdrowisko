@@ -1,0 +1,162 @@
+$darkGreenColor: #135E4B;
+$lightGreenColor: #5E9888; 
+$lightGrey: #EDEDED;
+$darkGrey: #707070;
+$brownish: #D3B19B;
+$darkBrownish: #B67152;
+
+.App {
+ max-width: 1280px;
+ margin: auto;
+}
+
+.about-section {
+  h1 {
+    color: $lightGrey;
+  }
+  p{
+    color: $darkGrey;
+  }
+}
+
+.medicine-section {
+  h1 {
+    color: $lightGreenColor;
+    padding-top: 30px;
+  }
+  p{
+    color: $darkGreenColor;
+    padding-top: 150px;
+  }
+}
+
+.joga-section {
+  h1 {
+    color: $brownish;
+  }
+  p { 
+    color: $darkBrownish;
+  }
+}
+
+.tagline-text {
+  .row{
+  text-align: center;
+
+  color: $lightGrey;
+  font-style: italic;
+  max-width: 850px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  }
+}
+.service-list-section {
+  background: transparent linear-gradient(180deg, #135E4B 0%, #5E9888 100%) 0% 0% no-repeat padding-box;
+  h3.service-section-title{
+  font-size: 50px;
+  color: white;
+}
+  p {
+  color: white;
+}
+span.top-word.withphoto {
+  display: inline-flex;
+  font-size: 30px;
+} 
+img {
+  height: 57px;
+} 
+}
+
+.offer {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+.service-list-section.orange {
+  background: transparent linear-gradient(180deg, #B67152 0%, #D3B19B 100%) 0% 0% no-repeat padding-box;
+  span.border-btm {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+}
+
+.schedule {
+  h2 {
+    text-align: center;
+    font-size: 60px;
+  }
+  .weekday {
+    border-left:1px solid #B67152;
+  }
+  .weekday:last-child {
+    border-right: 1px solid #B67152;
+  }
+  .weekday h4 {
+    font-size: 14px;
+    text-align: center;
+    color: #B67152;
+  }
+  .weekday h5 {
+    color: #707070;
+    font-size: 14px;
+    text-align: left;
+  }
+  h5.underline {
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+}
+
+.pricelist {
+  h1.gigantic {
+    font-size: 175px;
+    font-style: italic;
+  }
+}
+
+.contact {
+  background-image: url(./kontakt.png);
+  height: 600px;
+  object-fit:fill;
+  background-position-y: center;
+  h1.less-gigantic {
+    font-size: 153px;
+  }
+}
+h1.section-title {
+  font-size: 100px;
+  display: inline-flex;
+}
+h1.section-title.stacked {
+  display: block;
+  line-height: 77px;
+ 
+}
+p {
+  text-align: left;
+}
+span.g-italic {
+  font-style: italic;
+  margin-right: 10px;
+}
+span.border-btm {
+  border-bottom: 1px solid #B67152;
+  font-size: 16px;
+  color: #B67152;
+  padding-bottom: 10px;
+  line-height: 20px;
+  display: block;
+}
+span.italic {
+font-style: italic;
+}
+div.medicine-section.container {
+  background-color: #EDEDED;
+}
+div.medicine-section.container div.row {
+margin-top: 100px;
+}
