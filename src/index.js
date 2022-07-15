@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/georgia.woff';
+import './fonts/georgiab.woff';
+import './fonts/georgiai.woff';
+import './fonts/georgiaz.woff';
+import './fonts/Gill-Sans.woff';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

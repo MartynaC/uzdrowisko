@@ -2,8 +2,105 @@ $darkGreenColor: #135E4B;
 $lightGreenColor: #5E9888; 
 $lightGrey: #EDEDED;
 $darkGrey: #707070;
+$midGrey: #D3D3D3;
 $brownish: #D3B19B;
 $darkBrownish: #B67152;
+@font-face {
+  font-family: "Georgia-Reg";
+  src: local("Georgia"),
+   url("./fonts/georgia.woff") format("truetype");
+
+  }
+@font-face {
+  font-family: "Georgia-I";
+  src: local("GeorgiaI"),
+   url("./fonts/georgiai.woff") format("truetype");
+  
+  }
+
+ @font-face {
+    font-family: "Gill-Sans";
+    src: local("Gill-Sans"),
+     url("./fonts/Gill-Sans.woff") format("truetype");
+    
+  }
+
+/* HEADERS */ 
+
+h1.section-title {
+  font-size: 100px;
+  font-family: "Gill-Sans";
+  font-weight: 600;
+  text-align: right;
+}
+h1.gigantic {
+  font-size: 175px;
+  font-family: 'Georgia';
+  font-style: italic;
+  text-align: right;
+}
+h1.less-gigantic {
+  font-size: 120px;
+  font-family: 'Georgia';
+  font-style: italic;
+  text-align: right;
+}
+h2.section-title {
+  font-size: 60px;
+  font-family: "Gill-Sans";
+  font-weight: 600;
+  text-align: right;
+}
+h3.section-title {
+  font-size: 60px;
+  font-family: "Gill Sans";
+  line-height: 53px;
+  text-align: right;
+}
+h4.section-title {
+  font-size: 50px;
+  font-style: italic;
+  font-family: "Georgia";
+  text-align: right;
+}
+h5.pricelist-title {
+  font-size: 48px;
+  font-family: "Gill-Sans";
+  text-align: right;
+}
+
+/* paragraphs */ 
+
+p {
+ font-size: 16px;
+ font-family: 'Gill-Sans'; 
+}
+p.tagline {
+  font-style: italic;
+  font-size: 40px;
+  font-family: 'Georgia';
+  text-align: center;
+  color: $midGrey;
+}
+
+/* spans / modifications */ 
+span.tagline-author {
+  font-family: 'Gill Sans';
+  font-style: normal;
+}
+span.g-italic {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-weight: normal;
+  text-align: right;
+}
+span.italic {
+  font-style: italic;
+}
+span.top-word {
+  font-family: 'Gill Sans';
+  font-size: 30px;
+}
 
 .App {
  max-width: 1280px;
@@ -26,7 +123,7 @@ $darkBrownish: #B67152;
   }
   p{
     color: $darkGreenColor;
-    padding-top: 150px;
+  
   }
 }
 
@@ -42,9 +139,7 @@ $darkBrownish: #B67152;
 .tagline-text {
   .row{
   text-align: center;
-
   color: $lightGrey;
-  font-style: italic;
   max-width: 850px;
   margin: auto;
   margin-top: 150px;
@@ -53,10 +148,12 @@ $darkBrownish: #B67152;
 }
 .service-list-section {
   background: transparent linear-gradient(180deg, #135E4B 0%, #5E9888 100%) 0% 0% no-repeat padding-box;
-  h3.service-section-title{
-  font-size: 50px;
+  h4 {
   color: white;
-}
+  }
+  span.top-word {
+    font-style: normal;
+  }
   p {
   color: white;
 }
@@ -127,14 +224,10 @@ img {
     font-size: 153px;
   }
 }
-h1.section-title {
-  font-size: 100px;
-  display: inline-flex;
-}
+
 h1.section-title.stacked {
   display: block;
   line-height: 77px;
- 
 }
 p {
   text-align: left;

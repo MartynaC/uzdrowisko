@@ -32,9 +32,9 @@ function App() {
             </h1>
           </Col>
           <Col xs={12} md={6}>
-            <p>Jestem pasjonatką Jogi i Medycyny Holistycznej. Swoją drogę rozpoczęłąm jako pacjentka borykająca się z różnymi dolegliwościami oraz uczennica jogi poszukująca połączenia
+            <p><span className='italic'>Jestem pasjonatką Jogi i Medycyny Holistycznej.</span> Swoją drogę rozpoczęłąm jako pacjentka borykająca się z różnymi dolegliwościami oraz uczennica jogi poszukująca połączenia
               ze swoim ciałem oraz umysłem. Podążając za wiedzą i rozwojem, zostałam nauczycielem jogi, a także akupunkturzystką. Medycyna Chińska oraz głęboka praktyka Jogi pomogły mi poczuć,
-              a potem zrozumieć swój organizm. Oba systemy są dla mnie ścieżką samorozwoju, pogłębiania świadomości, kultywowania zdrowia i poszukiwania dobrostanu psychicznego. Wierzę,
+              a potem zrozumieć swój organizm. Oba systemy są dla mnie ścieżką samorozwoju, pogłębiania świadomości, kultywowania zdrowia i poszukiwania dobrostanu psychicznego. <br></br><br></br>Wierzę,
               że zdrowie fizyczne i psychiczne są naturalnym stanem, do którego dąży każdy organizm. Naszym zadaniem jest zrozumieć jego naturę oraz wspierać go w dążeniu do właściwego optimum.</p>
           </Col>
 
@@ -49,7 +49,7 @@ function App() {
             </h1>
           </Col>
           <Col xs={12} md={6}>
-            <p>Jestem absolwentką Trójmiejskiego Ośrodka Medycyny Orientalnej (TOMO) w specjalizacji akupunktura. Ukończyłam dodatkowe kursy i szkolenia
+            <p>Jestem absolwentką <span className='italic'></span>Trójmiejskiego Ośrodka Medycyny Orientalnej (TOMO) w specjalizacji akupunktura. Ukończyłam dodatkowe kursy i szkolenia
               (m. in. kurs dietetyki wg. 5 przemian, ziołolecznictwa,
               moxy, masażu gua sha, diagnostyki z pulsu i języka), szkolenie „Level Up - Stems and Branches”.</p>
           </Col>
@@ -62,6 +62,7 @@ function App() {
             </h1>
           </Col>
           <Col xs={12} md={6}>
+            <p>Jogę praktykuję od 2012 r., nauczam od 2015 r. Uważam, że Joga jest bezustannym procesem, dlatego pogłębiając swoją praktykę staram się czerpać wiedzę ze źródła - podróże do Indii.</p>
             <p><span className='border-btm'>Ukończyłam kursy:</span> <br></br>
               <span className='border-btm italic'>Międzynarodowy Kurs Nauczycielski Jogi Sivanandy (200hrs Yoga Alliance TTC) :</span> <br></br>
               <span className='border-btm italic'>Instruktor Zajęć Psychofizycznych (EFIB),</span> <br></br>
@@ -74,8 +75,9 @@ function App() {
       <Container className='tagline-text'>
         <Row>
 
-          <h2>Nie praktykujemy, by rzeczy stały się doskonałe, ani by robić coś w sposób doskonały.
-            W istocie praktykujemy po to, aby zrozumieć fakt, że rzeczy już są doskonałe, właśnie takie, jakie są. Jon Kabat-Zinn</h2>
+          <p className='tagline'>Nie praktykujemy, by rzeczy stały się doskonałe, ani by robić coś w sposób doskonały.
+            W istocie praktykujemy po to, aby zrozumieć fakt, że rzeczy już są doskonałe, właśnie takie, jakie są. 
+            <br></br><span className='tagline-author'>Jon Kabat-Zinn</span></p>
         </Row>
       </Container>
 
@@ -88,7 +90,7 @@ function App() {
             </h1>
           </Col>
           <Col xs={12} md={6}>
-            <p>Medycyna Chińska (jeden z najstarszych systemów medycznych świata) jest skuteczną metodą profilaktyki zdrowia oraz leczenia chorób.
+            <p><span className='g-italic'>Medycyna Chińska </span>(jeden z najstarszych systemów medycznych świata) jest skuteczną metodą profilaktyki zdrowia oraz leczenia chorób.
               Traktuje człowieka jako jedność na poziomie ciała, umysłu oraz ducha - nasze myśli, emocje i kondycja fizyczna wpływają na siebie nawzajem.
               Terapia opiera się na równoważeniu przepływu energii w ciele i narządach wewnętrznych, dzięki czemu organizm wraca do naturalnego stanu równowagi.
               Pracując z pacjentem stosuję szczegółową diagnozę opierającą się na głębokim wywiadzie, badaniu pulsu oraz oględzinach języka.
@@ -101,12 +103,12 @@ function App() {
       <Container className='service-list-section'>
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title stacked'>
+            <h4 className='service section-title stacked'>
               <span className='top-word withphoto'><img src={aku} alt="Akupunktura klasyczna" />AKUPUNKTURA.</span><br></br> <span className="g-italic">KLASY-<br></br> CZNA</span>
-            </h3>
+            </h4>
           </Col>
           <Col xs={12} md={6}>
-            <p>Skuteczna metoda leczenia rożnego rodzaju chorób i dolegliwości bólowych.
+            <p><span className='g-italic'>Skuteczna metoda leczenia rożnego rodzaju chorób i dolegliwości bólowych.</span>
               Zabieg polega na wbijaniu cieniutkich igieł w określone punkty na ciele.
               Zgodnie z tym systemem każda jednostka ma swoje mocne i słabe strony, diagnozujemy je poprzez badanie pulsu pacjenta.
               Po znalezieniu najsłabszych ogniw wzmacniamy je za pomocą odpowiednio dobranych punktów, dzięki
@@ -121,9 +123,9 @@ function App() {
 
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title'>
+            <h4 className='service section-title'>
               BAŃKI.
-            </h3>
+            </h4>
           </Col>
           <Col xs={12} md={6}>
             <p>Skuteczna metoda leczenia rożnego rodzaju chorób i dolegliwości bólowych.
@@ -139,9 +141,9 @@ function App() {
 
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title'>
+            <h4 className='service section-title'>
               MOXA.
-            </h3>
+            </h4>
           </Col>
           <Col xs={12} md={6}>
             <p>Bazuje ona na ogrzewaniu punktów akupunkturowych specjalnym cygarem lub stożkami,
@@ -154,9 +156,9 @@ function App() {
 
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title'>
+            <h4 className='service section-title'>
               GUA SHA.
-            </h3>
+            </h4>
           </Col>
           <Col xs={12} md={6}>
             <p>To starożytny masaż uzdrawiający, który polega na drapaniu skóry specjalnym urządzeniem wykonanym z rogu zwierzęcia lub kamienia.
@@ -168,9 +170,9 @@ function App() {
 
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title'>
+            <h4 className='service section-title'>
               ZIOŁO-<br></br>LECZNICTWO.
-            </h3>
+            </h4>
           </Col>
           <Col xs={12} md={6}>
             <p>Niepodważalna skuteczność tej terapii sięga korzeniami aż do starożytnośći. W terapii głównie korzystam z receptur chińskich.
@@ -182,9 +184,9 @@ function App() {
 
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title stacked'>
-              DIETETYKA WEDŁUG.<br></br>MEDYCYNY CHIŃSKIEJ
-            </h3>
+            <h4 className='service section-title stacked'>
+              <span className='top-word'>DIETETYKA WEDŁUG.</span><br></br>MEDYCYNY CHIŃSKIEJ
+            </h4>
           </Col>
           <Col xs={12} md={6}>
             <p>Jeśli pojawia się taka potrzeba, często uzupełniamy terapię o ogólne wskazówki dietetyczne.
@@ -196,9 +198,9 @@ function App() {
 
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title stacked'>
-              AKUPUNKTURA.<br></br>KOSME- <br></br>TYCZNA
-            </h3>
+            <h4 className='service section-title stacked'>
+            <span className='top-word'>AKUPUNKTURA.</span><br></br>KOSME- <br></br>TYCZNA
+            </h4>
           </Col>
           <Col xs={12} md={6}>
             <p>To zabieg z ramienia medycyny estetycznej, który polega na wbijaniu malutkich igieł w skórę na twarzy.
@@ -216,9 +218,9 @@ function App() {
       <Container className='offer'>
         <Row className='joga-section'>
           <Col xs={12} md={6}>
-            <h2 className='section-title'>
+            <h1 className='section-title'>
               JOGA.
-            </h2>
+            </h1>
           </Col>
           <Col xs={12} md={6}>
             <p><span>Zajęcia Jogi opieram na wiedzy z różnych metod nauczania Jogi, m.in. Sivananda, Ashtanga,
@@ -236,7 +238,7 @@ function App() {
         <Row className='offer-section'>
           <Col xs={12} md={6}>
             <h2 className='section-title stacked'>
-              <span className='italic'>W.</span><br></br>OFERCIE.
+              <span className='g-italic'>W</span><br></br>OFERCIE.
             </h2>
           </Col>
           <Col xs={12} md={6}>
@@ -262,7 +264,7 @@ function App() {
       <Container className='service-list-section orange'>
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title stacked'>
+            <h3 className='service section-title stacked'>
               JOGA.<br></br> <span className="g-italic">SIVANANDA</span>
             </h3>
           </Col>
@@ -276,7 +278,7 @@ function App() {
         </Row>
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title stacked'>
+            <h3 className='service section-title stacked'>
               JOGA.<br></br> <span className="g-italic">DLA<br></br>KAŻDEGO</span>
             </h3>
           </Col>
@@ -289,7 +291,7 @@ function App() {
         </Row>
         <Row className='service-section'>
           <Col xs={12} md={6}>
-            <h3 className='service-section-title stacked'>
+            <h3 className='service section-title stacked'>
               JOGA.<br></br> <span className="g-italic">DLA<br></br>KOBIET<br></br>W  CIĄŻY</span>
             </h3>
           </Col>
@@ -314,8 +316,8 @@ function App() {
         <Row>
                 <Col md={1}></Col>
                 <Col md={10}>
-                <h2 className='service-section-title stacked'>
-              GRAFIK<br></br> <span className="g-italic">ZAJĘĆ<br></br></span>
+                <h2 className='service section-title stacked'>
+                <span className="g-italic swaped">GRAFIK</span><br></br> ZAJĘĆ.<br></br>
             </h2>
                   <Row>
                  
@@ -367,15 +369,15 @@ function App() {
         </h1>
         <Row>
                 <Col xs={12} md={6}>
-                <h3 className='bit-smaller'>
+                <h5 className='pricelist-title'>
                   JOGA.
-                </h3>
+                </h5>
                 </Col>
 
                 <Col xs={12} md={6}>
-                <h3 className='bit-smaller'>
+                <h5 className='pricelist-title'>
                   MEDYCYNA CHIŃSKA
-                </h3>
+                </h5>
                   </Col>
         </Row>
       </Container>
