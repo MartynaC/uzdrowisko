@@ -7,7 +7,8 @@ import './fonts/georgia.woff';
 import './fonts/georgiab.woff';
 import './fonts/georgiai.woff';
 import './fonts/georgiaz.woff';
-import './fonts/Gill-Sans.woff';
+import './fonts/gillsans.woff';
+import kontakt from './kontakt.png';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -20,8 +20,8 @@ $darkBrownish: #B67152;
 
  @font-face {
     font-family: "Gill-Sans";
-    src: local("Gill-Sans"),
-     url("./fonts/Gill-Sans.woff") format("truetype");
+    src: local("Gillsans"),
+     url("./fonts/gillsans.woff") format("truetype");
     
   }
 
@@ -30,7 +30,7 @@ $darkBrownish: #B67152;
 h1.section-title {
   font-size: 100px;
   font-family: "Gill-Sans";
-  font-weight: 600;
+  font-weight: 500;
   text-align: right;
 }
 h1.gigantic {
@@ -38,17 +38,19 @@ h1.gigantic {
   font-family: 'Georgia';
   font-style: italic;
   text-align: right;
+  font-weight: 500;
 }
 h1.less-gigantic {
   font-size: 120px;
   font-family: 'Georgia';
   font-style: italic;
   text-align: right;
+  font-weight: 500;
 }
 h2.section-title {
   font-size: 60px;
   font-family: "Gill-Sans";
-  font-weight: 600;
+  font-weight: 500;
   text-align: right;
 }
 h3.section-title {
@@ -56,17 +58,20 @@ h3.section-title {
   font-family: "Gill Sans";
   line-height: 53px;
   text-align: right;
+  font-weight: 500;
 }
 h4.section-title {
   font-size: 50px;
   font-style: italic;
   font-family: "Georgia";
   text-align: right;
+  font-weight: 500;
 }
 h5.pricelist-title {
   font-size: 48px;
   font-family: "Gill-Sans";
   text-align: right;
+  font-weight: 500;
 }
 
 /* paragraphs */ 
@@ -252,4 +257,37 @@ div.medicine-section.container {
 }
 div.medicine-section.container div.row {
 margin-top: 100px;
+}
+
+/* accordion */ 
+
+.transparent{
+  button.accordion-button {
+  background-color: transparent;
+}
+.accordion-item {
+  background-color: transparent;
+}
+button.accordion-button {
+  color: white;
+}
+ 
+}
+
+.service-listgroup {
+  .list-group-item {
+    background-color: transparent;
+  }
+  .list-group-item {
+    color: white;
+  }
+  h3.section-title {
+    font-size: 25px;
+    line-height: 18px;
+  }
+}
+.services-tabbed {
+margin-top: 100px;
+padding-top: 100px;
+margin-bottom: 100px;
 }
