@@ -12,12 +12,17 @@ import Accordion from 'react-bootstrap/Accordion';
 import Table from 'react-bootstrap/Table';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Tab from 'react-bootstrap/Tab';
-//import banki from './banki.png';
-//import moxa from './moxa.png';
-//import guasha from './guasha.png';
-//import ziolo from './ziolo.png';
-//import dieta from './dieta.png';
-//import aku2 from './aku2.png';
+import banki from './images/banki.png';
+import moxa from './images/moxa.png';
+import guasha from './images/guasha.png';
+import ziolo from './images/ziololecznictwo.png';
+import dieta from './images/dietetyka.png';
+import jogaSiva from './images/joga_siva.png';
+import jogaKazdy from './images/joga_dla_kazdego.png';
+import jogaCiaza from './images/joga_ciaza.png';
+import omnie from './images/omnie.png';
+import background from './images/about.png';
+
 
 
 
@@ -29,17 +34,19 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <Container className='about-section'>
+      <Container className='about-section' id='o-mnie'>
         <Row>
-          <Col xs={12} md={6}>
-            <h1 className='section-title'>
+          <Col xs={12} md={6} className='about-img'>
+    
+            <h1 className='section-title special-first'>
+          
               <span className="g-italic">O</span>MNIE.
             </h1>
+            
           </Col>
           <Col xs={12} md={6}>
             <p><span className='italic'>Jestem pasjonatką Jogi i Medycyny Holistycznej.</span> Swoją drogę rozpoczęłąm jako pacjentka borykająca się z różnymi dolegliwościami oraz uczennica jogi poszukująca połączenia
-              ze swoim ciałem oraz umysłem. Podążając za wiedzą i rozwojem, zostałam nauczycielem jogi, a także akupunkturzystką. Medycyna Chińska oraz głęboka praktyka Jogi pomogły mi poczuć,
-              a potem zrozumieć swój organizm. Oba systemy są dla mnie ścieżką samorozwoju, pogłębiania świadomości, kultywowania zdrowia i poszukiwania dobrostanu psychicznego. <br></br><br></br>Wierzę,
+              ze swoim ciałem oraz umysłem. Podążając za wiedzą i rozwojem, zostałam nauczycielem jogi, a także akupunkturzystką. <br></br><br></br>Wierzę,
               że zdrowie fizyczne i psychiczne są naturalnym stanem, do którego dąży każdy organizm. Naszym zadaniem jest zrozumieć jego naturę oraz wspierać go w dążeniu do właściwego optimum.</p>
           </Col>
 
@@ -49,14 +56,18 @@ function App() {
       <Container className='medicine-section'>
         <Row>
           <Col xs={12} md={6}>
-            <h1 className='section-title stacked'>
+            <h1 className='section-title stacked desktop-only'>
               <span className="g-italic">MEDY<br></br>CYNA</span><br></br>CHIŃ<br></br>SKA.
+            </h1>
+            <h1 className='section-title stacked mobile-only'>
+              <span className="g-italic">MEDYCYNA</span><br></br>CHIŃSKA.
             </h1>
           </Col>
           <Col xs={12} md={6}>
             <p>Jestem absolwentką <span className='italic'></span>Trójmiejskiego Ośrodka Medycyny Orientalnej (TOMO) w specjalizacji akupunktura. Ukończyłam dodatkowe kursy i szkolenia
               (m. in. kurs dietetyki wg. 5 przemian, ziołolecznictwa,
-              moxy, masażu gua sha, diagnostyki z pulsu i języka), szkolenie „Level Up - Stems and Branches”.</p>
+              moxy, masażu gua sha, diagnostyki z pulsu i języka), szkolenie „Level Up - Stems and Branches”.<br></br>
+              „Akupunktura Klasyczna-Michał Richter” (w toku)</p>
           </Col>
         </Row>
 
@@ -87,33 +98,72 @@ function App() {
       </Container>
 
 
-      <Container className='medicine-section'>
+      <Container className='medicine-section desc' id="chinska">
         <Row>
           <Col xs={12} md={6}>
-            <h1 className='section-title stacked'>
+            <h1 className='section-title stacked desktop-only'>
               <span className="g-italic">MEDY<br></br>CYNA</span><br></br>CHIŃ<br></br>SKA.
+            </h1>
+            <h1 className='section-title stacked mobile-only'>
+              <span className="g-italic">MEDYCYNA</span><br></br>CHIŃSKA.
             </h1>
           </Col>
           <Col xs={12} md={6}>
             <p><span className='g-italic'>Medycyna Chińska </span>(jeden z najstarszych systemów medycznych świata) jest skuteczną metodą profilaktyki zdrowia oraz leczenia chorób.
               Traktuje człowieka jako jedność na poziomie ciała, umysłu oraz ducha - nasze myśli, emocje i kondycja fizyczna wpływają na siebie nawzajem.
-              Terapia opiera się na równoważeniu przepływu energii w ciele i narządach wewnętrznych, dzięki czemu organizm wraca do naturalnego stanu równowagi.
-              Pracując z pacjentem stosuję szczegółową diagnozę opierającą się na głębokim wywiadzie, badaniu pulsu oraz oględzinach języka.
-              Na tej podstawie wyznaczam ścieżkę i wskazuję odpowiednią terapię (akupunktura, moxa, bańki, masaż gua sha, wskazówki żywieniowe w oparciu o dietetykę wg.medycyny chińskiej, zioła).
-              Wspólnie z pacjentem skupiamy się na znalezieniu przyczyny (korzenia) danego zaburzenia.
-              Poprzez terapię i zmianę szkodliwych nawyków pracujemy nad doprowadzeniem organizmu z powrotem do naturalnego stanu równowagi.</p>
+              Terapia opiera się na równoważeniu przepływu energii, dzięki czemu organizm wraca do naturalnego stanu równowagi.
+             <br></br><br></br> Pracując z pacjentem stosuję szczegółową diagnozę opierającą się na wywiadzie, badaniu pulsu oraz oględzinach języka.
+             Na tej podstawie wyznaczam strategie leczenia (dobór odpowiednich punktów akupunkturowych, ewentualnie ziół, wskazówek żywieniowych oraz korekty szkodliwych nawyków). 
+            </p>
           </Col>
         </Row>
       </Container>
+
       <Container className='service-list-section'>
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h4 className='service section-title stacked'>
-              <span className='top-word withphoto'><img src={aku} alt="Akupunktura klasyczna" />AKUPUNKTURA.</span><br></br> <span className="g-italic">KLASY-<br></br> CZNA</span>
-            </h4>
-          </Col>
-          <Col xs={12} md={6}>
-            <p><span className='g-italic'>Skuteczna metoda leczenia rożnego rodzaju chorób i dolegliwości bólowych.</span>
+<Row className='service-section'>
+<Tab.Container id="list-group-tabs-example" defaultActiveKey="#akupunktura">
+<Row className='services-tabbed'>
+<Col sm={6}>
+          <ListGroup className='service-listgroup'>
+            <ListGroup.Item action href="#akupunktura">
+            <h3 className='service section-title stacked'>
+            <span className='top-word withphoto'><img src={aku} alt="Akupunktura klasyczna" />AKUPUNKTURA.</span><span className="g-italic">KLASYCZNA</span>
+            </h3>
+            </ListGroup.Item>
+            <ListGroup.Item action href="#banki">
+            <h3 className='service section-title stacked'>
+            <span className='top-word withphoto'><img src={banki} alt="Bańki" />BAŃKI.</span>
+            </h3>
+            </ListGroup.Item>
+            <ListGroup.Item action href="#guasha">
+            <h3 className='service section-title stacked'>
+            <span className='top-word withphoto'><img src={guasha} alt="Gua Sha" /> GUA SHA.</span>
+            </h3>
+            </ListGroup.Item>
+            <ListGroup.Item action href="#ziololecznictwo">
+            <h3 className='service section-title stacked'>
+            <span className='top-word withphoto'><img src={ziolo} alt="Ziołolecznictwo" />ZIOŁOLECZNICTWO.</span>
+            </h3>
+            </ListGroup.Item>
+            <ListGroup.Item action href="#dietetyka" className='dietetyka-special'>
+            <h3 className='service section-title stacked'>
+            <span className='top-word withphoto'><img src={dieta} alt="Dietetyka" />DIETETYKA WEDŁUG</span> <br></br><span className="g-italic">MEDYCYNY CHIŃSKIEJ.</span>
+            </h3>
+            </ListGroup.Item>
+
+            <ListGroup.Item action href="#aku-kosmetyczna">
+            <h3 className='service section-title stacked'>
+            <span className='top-word withphoto'> <img src={aku} alt="Akupunktura kosmetyczna" />AKUPUNKTURA.</span> <span className="g-italic">KOSMETYCZNA</span>
+            </h3>
+            </ListGroup.Item>
+
+            
+          </ListGroup>
+        </Col>
+        <Col sm={6}>
+          <Tab.Content>
+            <Tab.Pane eventKey="#akupunktura">
+            <p><span className='italic'>Skuteczna metoda leczenia rożnego rodzaju chorób i dolegliwości bólowych. </span>
               Zabieg polega na wbijaniu cieniutkich igieł w określone punkty na ciele.
               Zgodnie z tym systemem każda jednostka ma swoje mocne i słabe strony, diagnozujemy je poprzez badanie pulsu pacjenta.
               Po znalezieniu najsłabszych ogniw wzmacniamy je za pomocą odpowiednio dobranych punktów, dzięki
@@ -123,103 +173,56 @@ function App() {
               leczenia może wydłużać się do 2-3 lat.
               Częstotliwość zabiegów ustalamy na spotkaniu (zwykle co 2-3 tygodnie, przy długotrwałym leczeniu częstotliwość się zmniejsza).
             </p>
-          </Col>
-        </Row>
-
-        <Row className='service-section' id='service'>
-          <Col xs={12} md={6}>
-            <h4 className='service section-title'>
-              BAŃKI.
-            </h4>
-          </Col>
-          <Col xs={12} md={6}>
+            </Tab.Pane>
+            <Tab.Pane eventKey="#banki">
             <p>Jest to starodawny zabieg, polegający na wytworzeniu podciśnienia w bańce (czyli szklanym owalnym naczyniu) i przyłożeniu jej do skóry np. pleców. 
               Powstałe podciśnienie zasysa skórę i warstwę podskórną do środka naczynia, dzięki czemu dochodzi do lokalnego wynaczynienia krwi, 
               która traktowana jest przez układ odpornościowy jako obce białko, co pobudza go do działania i zwiększenia ilości przeciwciał. 
               Zabieg ten jest pomocny przy infekcjach, przeziębieniach, obniżonej odporności organizmu, problemach z górnymi drogami oddechowymi, bólu pleców, mięśni, napięciu i stresie. 
               Pomaga poruszyć zastoje Krwi i Qi.
             </p>
-          </Col>
-        </Row>
-
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h4 className='service section-title'>
-              MOXA.
-            </h4>
-          </Col>
-          <Col xs={12} md={6}>
-            <p>Bazuje ona na ogrzewaniu punktów akupunkturowych specjalnym cygarem lub stożkami,
-              których głównym składnikiem jest Bylica Pospolita. Podobnie jak w przypadku akupunktury,
-              stymulowany jest przepływ energii w meridianach (kanałach energetycznych),
-              poruszane są zastoje Qi i Krwi.Dodatkowo doprowadzamy ciepło (energię Yang) do miejsc gdzie występują jej deficyty.
-            </p>
-          </Col>
-        </Row>
-
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h4 className='service section-title'>
-              GUA SHA.
-            </h4>
-          </Col>
-          <Col xs={12} md={6}>
+            </Tab.Pane>
+            <Tab.Pane eventKey="#guasha">
             <p>To starożytny masaż uzdrawiający, który polega na drapaniu skóry specjalnym urządzeniem wykonanym z rogu zwierzęcia lub kamienia.
               Poruszany jest w ten sposób przepływ Qi, Krwi i Limfy.
               Zabieg ten doskonale się sprawdza w przypadku infekcji, napięć i sztywności, bóli mięśni, stawów i głowy. Stymuluje układ odpornościowy.
             </p>
-          </Col>
-        </Row>
+            </Tab.Pane>
 
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h4 className='service section-title'>
-              ZIOŁO-<br></br>LECZNICTWO.
-            </h4>
-          </Col>
-          <Col xs={12} md={6}>
+            <Tab.Pane eventKey="#ziololecznictwo">
             <p>Niepodważalna skuteczność tej terapii sięga korzeniami aż do starożytnośći. W terapii głównie korzystam z receptur chińskich.
               Ich opis działania jest szczegółowy pod względem smaku, termiki i oddziaływania na dolegliwości oraz konkretne układy narządów.
               Dzięki temu łatwiej, a przede wszystkim celniej jest dobrać odpowiedni zestaw zindywidualizowany do potrzeb pacjenta.
               Nierzadko terapię uzupełniamy o zioła zachodnie.</p>
-          </Col>
-        </Row>
+            </Tab.Pane>
 
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h4 className='service section-title stacked'>
-              <span className='top-word'>DIETETYKA WEDŁUG.</span><br></br>MEDYCYNY CHIŃSKIEJ
-            </h4>
-          </Col>
-          <Col xs={12} md={6}>
+            <Tab.Pane eventKey="#dietetyka">
             <p>Jeśli pojawia się taka potrzeba, często uzupełniamy terapię o ogólne wskazówki dietetyczne.
               W podejściu Medycyny Chińskiej każdy produkt ma konkretny smak, termikę i sposób oddziaływania na organizm,
               dlatego odpowiednie odżywianie, dostosowane do Pór Roku i klimatu,
               w którym żyjemy ma ogromne znaczenie dla prawidłowego przebiegu terapii. </p>
-          </Col>
-        </Row>
+            </Tab.Pane>
 
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h4 className='service section-title stacked'>
-            <span className='top-word'>AKUPUNKTURA.</span><br></br>KOSME- <br></br>TYCZNA
-            </h4>
-          </Col>
-          <Col xs={12} md={6}>
-            <p>To zabieg z ramienia medycyny estetycznej, który polega na wbijaniu malutkich igieł w skórę na twarzy.
-              Skutkuje to poprawą ukrwienia, napięcia i kolorytu twarzy oraz ma działanie odmładzające, rozświetlające, rewitalizujące.
-              Akupunktura stymuluje produkcję kolagenu, ujędrnia i uelastycznia skórę.
-              Zmniejsza już istniejące zmarszczki oraz spowalnia proces powstawania nowych.
-              Jest zabiegiem polecanym osobom, które chcą w sposób bezinwazyjny poprawić wygląd i odżywienie swojej skóry.
-            </p>
-          </Col>
-        </Row>
+            <Tab.Pane eventKey="#aku-kosmetyczna">
+            <p>Jeśli pojawia się taka potrzeba, często uzupełniamy terapię o ogólne wskazówki dietetyczne.
+              W podejściu Medycyny Chińskiej każdy produkt ma konkretny smak, termikę i sposób oddziaływania na organizm,
+              dlatego odpowiednie odżywianie, dostosowane do Pór Roku i klimatu,
+              w którym żyjemy ma ogromne znaczenie dla prawidłowego przebiegu terapii. </p>
+            </Tab.Pane>
 
+           
+          </Tab.Content>
+        </Col>
+      </Row>
+    </Tab.Container>
 
+    </Row>
       </Container>
+      
+    
 
-      <Container className='offer'>
-        <Row className='joga-section'>
+      <Container className='offer' id='joga'>
+        <Row className='joga-section desc'>
           <Col xs={12} md={6}>
             <h1 className='section-title'>
               JOGA.
@@ -238,13 +241,13 @@ function App() {
           </Col>
         </Row>
 
-        <Row className='offer-section'>
+       {/*  <Row className='offer-section'>
           <Col xs={12} md={6}>
             <h2 className='section-title stacked'>
               <span className='g-italic'>W</span><br></br>OFERCIE.
             </h2>
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={6} className="offer-desc">
             <p>
               <span className='border-btm italic'>zajęcia grupowe (stacjonarnie i online) - 1h 15min</span> <br></br>
               <span className='border-btm italic'>zajęcia indywidualne z dojazdem z domu - 1h zajęcia</span> <br></br>
@@ -252,89 +255,58 @@ function App() {
 
             </p>
           </Col>
-        </Row>
+        </Row>*/}
 
       </Container>
 
-      <Container>
+     {/*  <Container className='joga-foto'>
         <Row>
           <Col xs={12} md={12}>
-            PHOTO
+          <img src={joga} alt="Joga" className='joga-img' />
           </Col>
         </Row>
-      </Container>
+      </Container>*/}
 
       <Container className='service-list-section orange'>
         <Row className='service-section'>
       
-    <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+    <Tab.Container id="list-group-tabs-example" defaultActiveKey="#joga-siva">
       <Row className='services-tabbed'>
         <Col sm={6}>
           <ListGroup className='service-listgroup'>
-            <ListGroup.Item action href="#link1">
+            <ListGroup.Item action href="#joga-siva">
             <h3 className='service section-title stacked'>
-              JOGA.<br></br> <span className="g-italic">SIVANANDA</span>
+            <span className='top-word withphoto'><img src={jogaSiva} alt="Joga Sivananda" />JOGA.</span> <span className="g-italic">SIVANANDA</span>
             </h3>
             </ListGroup.Item>
-            <ListGroup.Item action href="#link2">
+            <ListGroup.Item action href="#joga-dla-kazdego">
             <h3 className='service section-title stacked'>
-              JOGA.<br></br> <span className="g-italic">DLA<br></br>KAŻDEGO</span>
+            <span className='top-word withphoto'><img src={jogaKazdy} alt="Joga Sivananda" />JOGA.</span> <span className="g-italic">DLA KAŻDEGO</span>
+            </h3>
+            </ListGroup.Item>
+            <ListGroup.Item action href="#joga-dla-kobiet-w-ciazy">
+            <h3 className='service section-title stacked'>
+            <span className='top-word withphoto'><img src={jogaCiaza} alt="Joga Sivananda" />JOGA.</span> <span className="g-italic">DLA KOBIET W CIĄŻY</span>
             </h3>
             </ListGroup.Item>
           </ListGroup>
         </Col>
         <Col sm={6}>
           <Tab.Content>
-            <Tab.Pane eventKey="#link1">
+            <Tab.Pane eventKey="#joga-siva">
             <p>Nazywana jogą integralną lub klasyczną, ponieważ łączy w sobie prace na 3 poziomach: 
               fizycznym, umysłowym i duchowym. Zajęcia obejmują: ćwiczenia (asany), ćwiczenia oddechowe (pranayama), relaksację (savasana), 
               elementy medytacji i prace z mantrami. Określona sekwencja asan jest dobrana w taki sposób, 
               aby wzajemnie się dopełniać i działać na wszystkie układy ciała. 
               Praktyka Jogi Sivanandy kładzie duży nacisk na naukę głębokiego relaksu, rozwija świadomość ciała oraz uważność.</p>
             </Tab.Pane>
-            <Tab.Pane eventKey="#link2">
+            <Tab.Pane eventKey="#joga-dla-kazdego">
             <p>Zajęcia przeznaczone dla osób początkujących oraz tych, które pragną pogłębić swoją praktykę. 
               W trakcie zajęć stosuję różnorodne sekwencje asan nakierowane na wzmacnianie, uelastycznianie i rozluźnianie rożnych partii ciała. 
               Uczymy się odbudowywać świadomość własnego organizmu fizycznego, umysłu i oddechu. 
               Zajęcia odbywają się w kameralnych grupach, co pozwala mi indywidualnie podchodzić do potrzeb uczestników.</p> 
             </Tab.Pane>
-          </Tab.Content>
-        </Col>
-      </Row>
-    </Tab.Container>
-          <Col xs={12} md={6}>
-            <h3 className='service section-title stacked'>
-              JOGA.<br></br> <span className="g-italic">SIVANANDA</span>
-            </h3>
-          </Col>
-          <Col xs={12} md={6}>
-            <p>Nazywana jogą integralną lub klasyczną, ponieważ łączy w sobie prace na 3 poziomach: 
-              fizycznym, umysłowym i duchowym. Zajęcia obejmują: ćwiczenia (asany), ćwiczenia oddechowe (pranayama), relaksację (savasana), 
-              elementy medytacji i prace z mantrami. Określona sekwencja asan jest dobrana w taki sposób, 
-              aby wzajemnie się dopełniać i działać na wszystkie układy ciała. 
-              Praktyka Jogi Sivanandy kładzie duży nacisk na naukę głębokiego relaksu, rozwija świadomość ciała oraz uważność. </p>
-          </Col>
-        </Row>
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h3 className='service section-title stacked'>
-              JOGA.<br></br> <span className="g-italic">DLA<br></br>KAŻDEGO</span>
-            </h3>
-          </Col>
-          <Col xs={12} md={6}>
-            <p>Zajęcia przeznaczone dla osób początkujących oraz tych, które pragną pogłębić swoją praktykę. 
-              W trakcie zajęć stosuję różnorodne sekwencje asan nakierowane na wzmacnianie, uelastycznianie i rozluźnianie rożnych partii ciała. 
-              Uczymy się odbudowywać świadomość własnego organizmu fizycznego, umysłu i oddechu. 
-              Zajęcia odbywają się w kameralnych grupach, co pozwala mi indywidualnie podchodzić do potrzeb uczestników. </p>
-          </Col>
-        </Row>
-        <Row className='service-section'>
-          <Col xs={12} md={6}>
-            <h3 className='service section-title stacked'>
-              JOGA.<br></br> <span className="g-italic">DLA<br></br>KOBIET<br></br>W  CIĄŻY</span>
-            </h3>
-          </Col>
-          <Col xs={12} md={6}>
+            <Tab.Pane eventKey="#joga-dla-kobiet-w-ciazy">
             <p>Zajęcia skierowane są dla przyszłych mam. Pomagają przygotować się do porodu. Regularne ćwiczenie jogi podczas ciąży buduje siłę fizyczną oraz psychiczną, wzmacnia i stabilizuje system nerwowy. </p>
             <p>
             <span className='border-btm '>Na zajęciach skupimy się na: </span> <br></br>
@@ -347,18 +319,23 @@ function App() {
              
 
             </p>
-          </Col>
+            </Tab.Pane>
+          </Tab.Content>
+        </Col>
+      </Row>
+    </Tab.Container>
+         
         </Row>
       </Container>
 
-      <Container className='schedule'>
+    {/*  <Container className='schedule' id='grafik'>
         <Row>
                 <Col md={1}></Col>
                 <Col md={10}>
                 <h2 className='service section-title stacked'>
                 <span className="g-italic swaped">GRAFIK</span><br></br> ZAJĘĆ.<br></br>
             </h2>
-                  <Row>
+                  <Row className='schedule-row'>
                  
                   <Col className='weekday'>
                     <h4>PONIEDZIAŁEK</h4>
@@ -400,72 +377,106 @@ function App() {
 
         </Row>
 
-      </Container>
+      </Container>*/}
 
-      <Container className='pricelist'>
+      <Container className='pricelist' id='cennik'>
         <h1 className='gigantic'>
           CENNIK
         </h1>
-        <Row>
-        <Table responsive="md">
-      <thead>
-        <tr>
-          <th>#</th>
-          {Array.from({ length: 12 }).map((_, index) => (
-            <th key={index}>Table heading</th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          {Array.from({ length: 12 }).map((_, index) => (
-            <td key={index}>Table cell {index}</td>
-          ))}
-        </tr>
-        <tr>
-          <td>2</td>
-          {Array.from({ length: 12 }).map((_, index) => (
-            <td key={index}>Table cell {index}</td>
-          ))}
-        </tr>
-        <tr>
-          <td>3</td>
-          {Array.from({ length: 12 }).map((_, index) => (
-            <td key={index}>Table cell {index}</td>
-          ))}
-        </tr>
-      </tbody>
-    </Table>
-                <Col xs={12} md={6}>
+        <Row className='pricelist-columns'>
+       
+               {/*<Col xs={12} md={5} className='bordered-column'>
                 <h5 className='pricelist-title'>
                   JOGA.
                 </h5>
-                </Col>
-
+                <Row className='price-list joga'>
                 <Col xs={12} md={6}>
+                  <h5 className='usluga'>Usługa</h5>
+                </Col>
+                <Col xs={12} md={6}>
+                <h5 className='cena'>Cena</h5>
+                </Col>
+                <Col xs={12} md={6}>
+                  <h5 className='usluga'>Usługa</h5>
+                </Col>
+                <Col xs={12} md={6}>
+                <h5 className='cena'>Cena</h5>
+                </Col>
+                <Col xs={12} md={6}>
+                  <h5 className='usluga'>Usługa</h5>
+                </Col>
+                <Col xs={12} md={6}>
+                <h5 className='cena'>Cena</h5>
+                </Col>
+                <Col xs={12} md={6}>
+                  <h5 className='usluga'>Usługa</h5>
+                </Col>
+                <Col xs={12} md={6}>
+                <h5 className='cena'>Cena</h5>
+                </Col>
+                </Row>
+                </Col>*/}
+
+                
+
+                <Col xs={12} md={12}>
                 <h5 className='pricelist-title'>
-                  MEDYCYNA CHIŃSKA
+                  <span className='g-italic'>MEDYCYNA</span> CHIŃSKA
                 </h5>
+                <Row className='price-list medycyna' >
+                  <Col xs={6} md={6}>
+                   <h5 className='usluga'>Medycyna Chińska<br></br> 1 wizyta (diagnoza + zabieg akupunktury )</h5>
+                  </Col>
+                  <Col xs={6} md={6}>
+                   <h5 className='cena'>  <br></br> 150zł<br></br>( czas trwania ok 45min - 1h)</h5>
+                  </Col>
+                  </Row>
+                  <Row className='price-list medycyna' >
+                     <Col xs={6} md={6}>
+                      <h5 className='usluga'>Kolejna wizyta</h5>
+                    </Col>
+                      <Col xs={6} md={6}>
+                       <h5 className='cena'> 100zł <br></br>(czas trwania ok 30min)</h5>
+                      </Col>
+                  </Row>
+                <Row className='price-list medycyna' >
+                  <Col xs={6} md={6}>
+                    <h5 className='usluga'>Akupunktura kosmetyczna</h5>
+                  </Col>
+                  <Col xs={6} md={6}>
+                   <h5 className='cena'>150zł <br></br>(czas trwania ok 1h)</h5>
+                  </Col>
+                </Row>
                   </Col>
         </Row>
       </Container>
 
-    <Container className='contact'>
-    <img src={kontakt} alt="Kontakt" />
+    <Container className='contact' id='kontakt'>
+      <Col xs={12} md={12}>
+ 
+    </Col>
       <Row>
-        <Col md={4}>
-        <h1 className='less-gigantic section-title stacked'>
+        <Col md={4} className='section'>
+        <h1 className='less-gigantic section-title stacked desktop-only'>
         
         <span className="g-italic">KON<br></br>TAKT</span>
+        </h1>
+        <h1 className='less-gigantic section-title stacked mobile-only'>
+        
+        <span className="g-italic">KONTAKT</span>
         </h1>
         </Col>
         <Col md={4}>
           <p>Weronika Kulczyńska-Trzeciak<br></br> <br></br> 
-          609 077 780<br></br>  weronika.uzdrowisko@gmail.com</p>
+          <a href="tel:609 077 780">609 077 780</a><br></br> <a href="mailto:weronika.uzdrowisko@gmail.com">weronika.uzdrowisko@gmail.com</a></p>
         </Col>
-        <Col md={4}></Col>
+        <Col md={4}>
+          <p>Adres gabinetu</p>
+          <p>Ul. Naramowicka 240, Poznań<br></br>
+(1 piętro)</p>
+        </Col>
       </Row>
+      
     </Container>
     </div>
   );

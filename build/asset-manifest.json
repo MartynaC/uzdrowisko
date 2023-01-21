@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2ae107ce.css",
+    "main.js": "/static/js/main.f0dd6ca3.js",
+    "static/js/787.9fc959ed.chunk.js": "/static/js/787.9fc959ed.chunk.js",
+    "static/media/omnie.png": "/static/media/omnie.c6587b70b41c1d94affc.png",
+    "static/media/kontakt.png": "/static/media/kontakt.167330e2233e562ae950.png",
+    "static/media/about.png": "/static/media/about.578dc15a63531b56f0ee.png",
+    "static/media/georgia.woff": "/static/media/georgia.c796714104e6b6d29319.woff",
+    "static/media/georgiaz.woff": "/static/media/georgiaz.b67d0e160767ce4dffaa.woff",
+    "static/media/georgiai.woff": "/static/media/georgiai.d033b5cc2005867959c4.woff",
+    "static/media/georgiab.woff": "/static/media/georgiab.53de6d160d8b7e9cd373.woff",
+    "static/media/gillsans.woff": "/static/media/gillsans.3e4afeb205aed7bcfcef.woff",
+    "index.html": "/index.html",
+    "main.2ae107ce.css.map": "/static/css/main.2ae107ce.css.map",
+    "main.f0dd6ca3.js.map": "/static/js/main.f0dd6ca3.js.map",
+    "787.9fc959ed.chunk.js.map": "/static/js/787.9fc959ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ae107ce.css",
+    "static/js/main.f0dd6ca3.js"
+  ]
+}

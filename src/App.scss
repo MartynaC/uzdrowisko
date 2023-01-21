@@ -104,7 +104,7 @@ span.italic {
 }
 span.top-word {
   font-family: 'Gill Sans';
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .App {
@@ -115,29 +115,55 @@ span.top-word {
 .about-section {
   h1 {
     color: $lightGrey;
+    margin-top: -60px;
+    padding-left: 20px;
   }
   p{
     color: $darkGrey;
+    margin-left: 15%;
+    margin-top: 20%;
+    font-size: 16px;
+    padding-right: 10%;
+  }
+  .about-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+   // background-position-y: -180px;
+    height: 540px;
+    padding-left: 0px;
+  }
+  .about-img img {
+    margin-top: -60px;
+    z-index: -1;
+    position: relative;
+    max-width: 700px;
   }
 }
 
 .medicine-section {
+  padding-bottom: 50px;
   h1 {
     color: $lightGreenColor;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   p{
     color: $darkGreenColor;
-  
+    margin-top: 20%;
+  margin-left: 15%;
+  font-size: 16px;
+  padding-right: 10%;;
   }
 }
 
 .joga-section {
   h1 {
     color: $brownish;
+    margin-top: 15%
   }
   p { 
     color: $darkBrownish;
+    margin-top: 30px;
+    padding-right: 10%;
   }
 }
 
@@ -147,51 +173,181 @@ span.top-word {
   color: $lightGrey;
   max-width: 850px;
   margin: auto;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 80px;
+  margin-bottom: 160px;
   }
 }
 .service-list-section {
   background: transparent linear-gradient(180deg, #135E4B 0%, #5E9888 100%) 0% 0% no-repeat padding-box;
+  padding-bottom: 50px;
   h4 {
   color: white;
+  margin-top: 10%
   }
   span.top-word {
     font-style: normal;
   }
   p {
   color: white;
+  margin-left: 15%;
+  padding-top: 10%;
+  padding-right: 10%;
 }
 span.top-word.withphoto {
   display: inline-flex;
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 50px;
 } 
 img {
-  height: 57px;
+  height: 37px;
+  margin-right: 10px;
 } 
 }
-
+.joga-section.desc {
+  margin-top: 50px;
+  h1 {
+    margin-top: 0px;
+  }
+  p {
+    margin-left: 15%;
+  }
+}
+div.offer-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h2 {
+    font-size: 60px;
+    color: #D3B19B;
+  }
+  p {
+    margin-left: 15%;
+    padding-right: 10%;
+  }
+  .offer-desc {
+    padding-top: 30px;
+  }
+}
 .offer {
   h2 {
     font-size: 60px;
   }
 }
-
+div.joga-foto.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+  }
+}
 .service-list-section.orange {
-  background: transparent linear-gradient(180deg, #B67152 0%, #D3B19B 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #D3B19B 0%,  #B67152 100%) 0% 0% no-repeat padding-box;
+  z-index: 999999;
+  position: relative;
+}
+.service-list-section {
+  .list-group-item.active {
+    border-color: #B67152;
+    border-bottom: 1px solid white;
+    border-right: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    height: 60px;
+  }
+  .list-group-item {
+    border-color: #B67152;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    float: right;
+    text-align: right;
+  }
+  .active.dietetyka-special {
+    height: 110px;
+  }
+.service-list-section.orange .list-group-item {
+    border-color: #B67152;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    float: right;
+    text-align: right;
+}
+.list-group-item+.list-group-item {
+    border-top-width: 0;
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+  left: 30px;
+  color: white;
+  background-color: transparent;
+}
+  .service.section-title.stacked {
+    display: block;
+    float: right;
+  
+  }
+  span.top-word.withphoto {
+    margin-right: 10px;
+    
+  }
+  .list-group {
+    width: 80%;
+    margin-left: 20%;
+    border-radius: 0px;
+  }
+  div.col-sm-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  div.tab-pane {
+    padding-top: 10px;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    border-bottom: 0px;
+  }
+  img {
+    margin-right: 10px;
+    height: 37px;
+    padding-top: 2px;
+  }
+  h3.section-title, span.g-italic, span.top-word {
+    line-height: 50px;
+  }
   span.border-btm {
     color: white;
     border-bottom: 1px solid white;
   }
+  p {
+    padding-top: 10px;
+    margin-left: 20%;
+  }
 }
-
+#grafik {
+  background-color: #EDEDED;
+  margin-top: -200px;
+  .service.section-title.stacked {
+    margin-top: 183px;
+    color: #B67152;
+  }
+  span.g-italic {
+    margin-right: 120px;
+  }
+  .schedule-row {
+    margin-top: -200px;
+  }
+}
 .schedule {
+  padding-bottom: 80px;;
   h2 {
     text-align: center;
     font-size: 60px;
   }
   .weekday {
     border-left:1px solid #B67152;
+    border-left: 1px solid #B67152;
+    padding-top: 200px;
+    height: 100%;
   }
   .weekday:last-child {
     border-right: 1px solid #B67152;
@@ -200,6 +356,7 @@ img {
     font-size: 14px;
     text-align: center;
     color: #B67152;
+    padding-top: 80px;
   }
   .weekday h5 {
     color: #707070;
@@ -213,26 +370,83 @@ img {
 
 }
 
-.pricelist {
+#cennik {
+  margin-top: 10px;
+  background-color: #EDEDED;
+  padding-bottom: 50px;
   h1.gigantic {
-    font-size: 175px;
-    font-style: italic;
+      font-size: 175px;
+      font-family: "Georgia";
+      font-style: italic;
+      text-align: right;
+      font-weight: 500;
+      top: -45px;
+      position: relative;
+      color: white;
+      text-align: center;
+  }
+.pricelist-columns {
+  max-width: 90%;
+  margin-left: 10%;
+div {
+  text-align: left;
+
+}
+}
+h5.pricelist-title {    
+  text-align: left;
+  padding-left: 10%;
+  font-size: 37px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #5E9888;
+  margin-bottom: 50px;
+}
+.bordered-column {
+  border-right: 3px solid white;
+  h5.pricelist-title { 
+    color: #D3B19B;
+    margin-bottom: 100px;
   }
 }
+  .price-list {
+    padding-left: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #707070;
+    h5.usluga {
+      line-height: 30px;
+      border-right: 1px sold #B67152;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    h5.cena {
+      font-size:16px;
+      font-weight: 400;
+    }
+  
 
-.contact {
-  background-image: url(./kontakt.png);
-  height: 600px;
-  object-fit:fill;
-  background-position-y: center;
-  h1.less-gigantic {
-    font-size: 153px;
+}
+
+}
+
+
+
+.contact.container {
+  .section {
+    padding-right: 5%;
   }
+padding: 0px;
+padding-top: 10%;
+  h1.less-gigantic {
+    font-size: 123px;
+  }
+
 }
 
 h1.section-title.stacked {
   display: block;
-  line-height: 77px;
+  line-height: 97px;
 }
 p {
   text-align: left;
@@ -254,9 +468,15 @@ font-style: italic;
 }
 div.medicine-section.container {
   background-color: #EDEDED;
+  margin-top: -60px;
 }
-div.medicine-section.container div.row {
-margin-top: 100px;
+div.medicine-section.desc  {
+  h1 {
+    margin-top: -60px;
+  }
+  p {
+    margin-top: 10%;
+  }
 }
 
 /* accordion */ 
@@ -282,7 +502,7 @@ button.accordion-button {
     color: white;
   }
   h3.section-title {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 18px;
   }
 }
@@ -290,4 +510,111 @@ button.accordion-button {
 margin-top: 100px;
 padding-top: 100px;
 margin-bottom: 100px;
+}
+.mobile-only{
+  visibility: hidden;
+}
+.desktop-only {
+  visibility: visible;
+}
+@media only screen and (max-width: 600px) {
+  .mobile-only{
+    visibility: visible;
+  }
+  .desktop-only {
+   visibility: hidden;
+   height: 0px;
+  }
+  h1.mobile-only {
+    font-size: 60px;
+ margin-top: 50px;
+  }
+  .service-list-section {
+    .list-group {
+    width: 100%;
+    margin-left: 10%;
+  }
+  .service.section-title.stacked {
+    float: left;
+    display: list-item;
+    list-style-type: none;
+  }
+  span.top-word.withphoto {
+    font-size: 20px;;
+  }
+  span.g-italic {
+    font-size: 16px;
+  }
+ p {
+    margin-left: 40px;
+    width: 100%;
+  }
+  img {
+    width: 30px;
+  }
+  .active.dietetyka-special {
+    height: 110px;
+  }
+}
+.about-section p {
+  margin-top: 0px;
+  margin-left: 40px;
+}
+div.medicine-section.container {
+  margin-top: 0px;
+  h1 {
+    line-height: 67px;
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 40px;
+  }
+   p {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
+.tagline-text .row {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+p.tagline {
+  font-size: 22px;
+}
+.joga-section.desc {
+  h1.section-title {
+    text-align: left;
+    margin-left: 40px;
+  }
+  p
+  {
+    margin-left: 40px;
+  }
+}
+#cennik {
+  h1.gigantic {
+  font-size: 60px;
+  top: 30px;
+  margin-bottom: 60px;
+}
+.price-list {
+  margin-top: 40px;
+}
+.pricelist-columns {
+  max-width: 100%;
+  margin-left: 0px;
+  div {
+    text-align: left;
+  }
+}
+}
+.contact.container
+{
+  h1.less-gigantic {
+    font-size: 60px;
+    text-align: center;
+  }
+  p {
+    margin-left: 40px;
+  }
+} 
 }
